@@ -1,0 +1,40 @@
++ОБЪЕКТ;
+ИМЯ=Оси; КОД=axis; ТИП=К;
+
++ПАРАМЕТРЫ;
+Size=;
+
+diam=;
+doubleDiam=;
+bodyLength=;
+capLength=;
+
++ЭЛЕМЕНТЫ;
+    ЭЛЕМЕНТ=0; ТИП=Ф; !КОД=sfera; Д=bodyLength;
+
+    ЭЛЕМЕНТ=cntr; КОД=kub; А=doubleDiam;
+
+    ЭЛЕМЕНТ=x_body; КОД=cilindr; В=bodyLength; Д=diam; 
+    ЭЛЕМЕНТ=x_cap;  КОД=konus;   В=capLength;  Д1=doubleDiam; Д2=0;
+
+    ЭЛЕМЕНТ=y_body; КОД=cilindr; В=bodyLength; Д=diam; 
+    ЭЛЕМЕНТ=y_cap;  КОД=konus;   В=capLength;  Д1=doubleDiam; Д2=0;
+
+    ЭЛЕМЕНТ=z_body; КОД=cilindr; В=bodyLength; Д=diam; 
+    ЭЛЕМЕНТ=z_cap;  КОД=konus;   В=capLength;  Д1=doubleDiam; Д2=0;
+
+
++ФОРМУЛЫ;
+diam=Size/20;
+doubleDiam=diam*2;
+bodyLength=Size-capLength;
+capLength=diam*4;
+
++ПОЛОЖЕНИЕ;
+СВЯЗЬ=0-cntr; X=-diam;
+СВЯЗЬ=0-x_body;
+СВЯЗЬ=x_body-x_cap; X=bodyLength;
+СВЯЗЬ=0-y_body; UZ=90;
+СВЯЗЬ=y_body-y_cap; X=bodyLength;
+СВЯЗЬ=0-z_body; UY=-90;
+СВЯЗЬ=z_body-z_cap; X=bodyLength;

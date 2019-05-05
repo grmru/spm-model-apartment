@@ -1,5 +1,8 @@
 {
   "RootModelCode": "apartment",
-  "AdditionalModelDirectories": [],
-  "SPBaseDirectory": "spd"
+  "AdditionalModelDirectories": [
+    "/Users/georgetsyrkov/Projects/spm5/!_output/Debug/sys"
+  ],
+  "SPBaseDirectory": "spd",
+  "Encoding": 65001
 }
