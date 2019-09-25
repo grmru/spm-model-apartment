@@ -110,8 +110,8 @@
   СВЯЗЬ=corner2-pipes; X=-5; Z=32;
 
   !СВЯЗЬ=corner3-chair1; UX=-90; Y=75; Z=65; X=-42;
-  !СВЯЗЬ=corner4-pax1; UX=-90; UZ=90; Z=114; X=80; Y=-30;
-  !СВЯЗЬ=corner4-pax2; UX=-90; UZ=90; Z=114; X=80; Y=-30; X=150;
+  СВЯЗЬ=corner4-pax1; UX=-90; UZ=90; Z=114; X=80; Y=-30;
+  СВЯЗЬ=corner4-pax2; UX=-90; UZ=90; Z=114; X=80; Y=-30; X=150;
   !СВЯЗЬ=corner2-besta; UX=-90; Z=96; Y=-23; X=-270;
 
   СВЯЗЬ=tab2-air; Y=151; X=5;
