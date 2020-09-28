@@ -1,7 +1,7 @@
 {
   "RootModelCode": "apartment",
   "AdditionalModelDirectories": [
-    "C:\\!_sources\\spm5\\!_output\\Debug\\sys"
+    "/home/george/Projects/spm5/spm/bin/Release/netcoreapp3.1/linux-x64/publish/sys"
   ],
   "SPBaseDirectory": "spd",
   "Encoding": 65001
